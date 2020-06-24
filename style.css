@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+
+
+body {
+	font-family: 'Raleway', sans-serif;
+	font-size: 16px;
+	background-color: #f2f2f2;
+}
+
+#sidebar {
+	width: 19%;
+	background-color: #f2f2f2;
+	float: left;
+	letter-spacing: 2px;
+}
+#sidebar-user {
+	text-align: center;
+	padding-top: 27px;
+	padding-bottom: 65px;
+	font-size: 15px;
+}
+#sidebar-user img{
+	border-radius: 50%;
+	width: 58px;
+	margin-top: 27px;
+	margin-bottom: 15px;
+}
+#sidebar-user h2{
+	text-align: center;
+	font-size: 18px;
+	color: #868585;
+}
+#sidebar-menu ul li a{
+	text-transform: uppercase;
+	color: #707070;
+	font-weight: 600;
+	text-decoration: none;
+	display: block;
+	padding:30px;
+	position: relative;
+	transition: all ease 300ms;
+}
+#sidebar-menu ul li img{
+	padding-right: 28px;
+	margin-bottom: -5px;
+}
+#sidebar-menu ul li:hover {
+	background-color: #cc99cc;
+}
+#sidebar-menu ul li:hover a{
+	color: #fff;
+}
+#sidebar-menu ul li:hover img{
+	filter: brightness(500%);
+}
+#sidebar-menu ul li a .bagg{
+	position: absolute;
+	top:31px;
+	right: 22px;
+	background-color: #fa7d7d;
+	border-radius: 50%;
+	width: 19px;
+	font-style: 9px;
+	color: #fff;
+	text-align: center;
+}
+
+#main {
+	float: left;
+	width: 81%;
+	background-image: url(images/dashboard-bg.jpg);
+	background-size: cover;
+	height: 200vh;
+}
+#navigation {
+	padding: 35px 35px 35px 105px;
+	position: relative;
+	color: #fff;
+}
+#navigation .menu-icon {
+	position: absolute;
+	left: 35px;
+	top: 35px;
+}
+#navigation #greet {
+	position: absolute;
+	right: 0px;
+    top: 0px;
+    margin-bottom: -10px;
+}
+#navigation .surch-icon{
+	position: absolute;
+	right: 103px;
+	top:35px;
+}
+#navigation .bell-icon {
+	position: absolute;
+	right: 53px;
+	top:35px;
+}
+span{
+	color: #cc99cc;
+}
+.bagg2 {
+	position: absolute;
+	top:-10px;
+	right: -5px;
+	width: 8px;
+	height: 8px;
+	border-radius: 50%;
+	background-color: #ffcc33;
+}
+
+#contents {
+	padding: 10px 52px;
+	color: #fff;
+}
+#project-activity {
+	background-color: rgb(255,255,255,0.2);
+	width: 100%;
+	height: 200px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
