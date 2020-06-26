@@ -6,17 +6,28 @@ body {
 	font-size: 16px;
 	background-color: #f2f2f2;
 }
+.clearThis{
+	clear: both;
+}
+h2{
+	text-align: center;
+	font-size: 18px;
+	color: #868585;
+}
+h3{
+	font-size: 21px;
+}
 
 #sidebar {
-	width: 19%;
+	width: 245px;
 	background-color: #f2f2f2;
-	float: left;
-	letter-spacing: 2px;
+	min-height: 100vh;
+	position: fixed;
 }
 #sidebar-user {
 	text-align: center;
-	padding-top: 27px;
-	padding-bottom: 65px;
+	padding-top: 17px;
+	padding-bottom: 35px;
 	font-size: 15px;
 }
 #sidebar-user img{
@@ -24,11 +35,6 @@ body {
 	width: 58px;
 	margin-top: 27px;
 	margin-bottom: 15px;
-}
-#sidebar-user h2{
-	text-align: center;
-	font-size: 18px;
-	color: #868585;
 }
 #sidebar-menu ul li a{
 	text-transform: uppercase;
@@ -66,11 +72,11 @@ body {
 }
 
 #main {
-	float: left;
-	width: 81%;
+	width: 100%;
+	padding-left: 250px;
 	background-image: url(images/dashboard-bg.jpg);
 	background-size: cover;
-	height: 200vh;
+	min-height: 100vh;
 }
 #navigation {
 	padding: 35px 35px 35px 105px;
@@ -98,7 +104,7 @@ body {
 	right: 53px;
 	top:35px;
 }
-span{
+#gleet span{
 	color: #cc99cc;
 }
 .bagg2 {
@@ -115,24 +121,83 @@ span{
 	padding: 10px 52px;
 	color: #fff;
 }
-#project-activity {
-	background-color: rgb(255,255,255,0.2);
+.widget{
+	background-color: rgba(186,153,197,0.35);
 	width: 100%;
-	height: 200px;
+	margin: 17px 0;
+}
+#project-activity {
+	height: 370px;
+}
+#finance-activity{
+	height: 290px;
+}
+#schedule, #team{
+	height: 270px;
+}
+#chats{
+	height: 511px;
+}
+.col-left{
+	width: 63%;
+	float: left;
+}
+.col-right{
+	width: 33%;
+	float: right;
+}
+
+.widget h3{
+	position: relative;
+    padding: 22px 0 0 52px;
+    display: block;
+    font-weight: 400;
+}
+
+h3:before{
+	font-size: 60px;
+    content: "\2022";
+    position: absolute;
+    top: 0px;
+    left: 20px;
+}
+
+#project-activity h3:before{
+	color: #ffcc66;
+}
+#finance-activity h3:before{
+	color: #8dfe66;
+}
+#schedule h3:before{
+	color: #68edad;
+}
+#team h3:before{
+	color: #fe85ae;
+}
+#chats h3:before{
+	color: #6fcae8;
 }
 
 
+#pDay ul{
+}
 
+#pDay ul li{
+	text-transform: uppercase;
+	display: inline-block;
+	text-align: center;
+	width: 15%;
+	font-size: 12px;
+	}
 
-
-
-
-
-
-
-
-
-
+.chart-container {
+	margin-top: 10px;
+}
+.chart-container p{
+	text-align: center;
+	margin: 5px;
+	font-size: 10px;
+}
 
 
 

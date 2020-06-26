@@ -3,6 +3,7 @@
 <head>
 	<title>User DASHBOARD</title>
 	<link rel="stylesheet" href="reset.css">
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.css">
 	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
@@ -30,26 +31,60 @@
 			<a class="bell-icon" href="#"><img src="images/bell.png"><div class="bagg2"></div></a>
 		</div>
 		<div id="contents">
-			<div id="project-activity">
-				<p>Project Activity</p>
+			<div id="project-activity" class="widget">
+				<div id="project-activity">
+					<h3>Project Activity</h3>
+					<div id="pDay" class="p-day-t p-day-f">
+						<ul>
+							
+							<li>Monday</li>
+							<li>Thursday</li>
+							<li>Wednesday</li>
+							<li>Thursday</li>
+							<li>Fryday</li>
+							<li>Saturday</li>
+							
+						</ul>
+					</div>
+					<canvas id="p-activity" width="auto" height="100%"></canvas>
+				</div>
 			</div>
-			<div id="finance-activity">
-				<p>Finance Activity</p>
+			<div class="col-left">
+				<div id="finance-activity" class="widget">
+					<h3>Finance Activity</h3>
+					<div class="chart-container" style="position: relative; height:182px; width:182px; float:left">
+					    <canvas id="f-activity1"></canvas>
+					    <p>DETAIL</p>
+					</div>
+					<div class="chart-container" style="position: relative; height:182px; width:182px; float:left">
+					    <canvas id="f-activity2"></canvas>
+					    <p>DETAIL</p>
+					</div>
+					<div class="chart-container" style="position: relative; height:182px; width:182px; float:left">
+					    <canvas id="f-activity3"></canvas>
+					    <p>DETAIL</p>
+					</div>
+				</div>
+				<div id="team" class="widget col-left">
+					<h3>Team</h3>
+				</div>
+				<div id="schedule" class="widget col-right">
+					<h3>Schedule</h3>
+				</div>
 			</div>
-			<div id="chats">
-				<p>Chats</p>
+			<div class="col-right">
+				<div id="chats" class="widget">
+					<h3>Chats</h3>
+					<canvas id="myChart"></canvas>
+				</div>
 			</div>
-			<div id="team">
-				<p>Team</p>
-			</div>
-			<div id="schedule">
-				<p>Schedule</p>
-			</div>
+			<div class="clearThis"></div>
 
 			
 		</div>
 	</div>
     <!-- Optional JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.bundle.min.js"></script>
     <script type="text/javascript" src="main.js"></script>
 </body>
 </html>
