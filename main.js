@@ -398,18 +398,18 @@ var teams =[
   'name': 'aaaaa',
   'position':'faaaaa'
 }
-]
+];
 
 function teamlist(){
         html = '';
           for(var i=0; i<teams.length; i++){ 
-            html+= '<img src="imges/'teams[i].img+'"><br><p>'+teams[i].name+'</p><br><p>'+teams[i].position'</p>';
+            html+= '<img src="imges/'+teams[i].img+'"><br><p>'+teams[i].name+'</p><br><p>'+teams[i].position+'</p>';
           }
-        html+=``
+        html+=``;
         document.getElementById(`teamUser`).innerHTML=html
      } 
 teamList();
-console.log();
+
 function addToList(){
         var addImg = document.getElementById('addImg').value;
         var addName = document.getElementById('addName').value;
