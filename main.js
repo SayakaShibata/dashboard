@@ -204,7 +204,7 @@ var fActivity1 = new Chart(ctx2, {
         },
         elements: {
             center: {
-            text: 'EXPENSE'+'1300',
+            text: '',
             color: '#ffffff',
             fontStyle: 'Helvetica',
             sidePadding: 15
@@ -213,10 +213,7 @@ var fActivity1 = new Chart(ctx2, {
 
     }
 });
-//var value = myChart.data.labels[0];
-//console.log(value);
-//var usdull = myChart.data.datasets[1].data[0];
-//console.log(usdull);
+
 
 
 //Center wrighting plugin
@@ -225,8 +222,10 @@ Chart.pluginService.register({
     if (chart.config.options.elements.center) {
       var ctx = chart.chart.ctx;
       var centerConfig = chart.config.options.elements.center;
+      var lab = chart.data.labels[0];
+      var pay = chart.data.datasets[0].data[0];
       var fontStyle = centerConfig.fontStyle || 'Arial';
-      var txt = centerConfig.text;
+      var txt = centerConfig.text + lab + ' $'+pay;
       var color = centerConfig.color || '#000';
       var sidePadding = centerConfig.sidePadding || 20;
       var sidePaddingCalculated = (sidePadding/100) * (chart.innerRadius * 2)
@@ -307,7 +306,7 @@ var fActivity2 = new Chart(ctx3, {
         },
         elements: {            
             center: {
-            text: 'EXPENSE'+'1300',
+            text:'',
             color: '#ffffff',
             fontStyle: 'Helvetica',
             sidePadding: 15
@@ -316,8 +315,7 @@ var fActivity2 = new Chart(ctx3, {
 
     }
 });
-//var value = myChart.data.labels[0];
-//console.log(value);
+
 
 //finance part3
 
@@ -373,7 +371,7 @@ var fActivity3 = new Chart(ctx4, {
         },
         elements: {            
             center: {
-            text: 'EXPENSE'+'1300',
+            text: '',
             color: '#ffffff',
             fontStyle: 'Helvetica',
             sidePadding: 15
@@ -382,8 +380,76 @@ var fActivity3 = new Chart(ctx4, {
 
     }
 });
-//var value = myChart.data.labels[0];
-//console.log(value);
+
+//team javascript
+var teams =[
+{
+  'img': 'user1.jpg',
+  'name': 'aaaaa',
+  'position':'faaaaa'
+},
+{
+  'img': 'user2.jpg',
+  'name': 'aaaaa',
+  'position':'faaaaa'
+},
+{
+  'img': 'open.png',
+  'name': 'aaaaa',
+  'position':'faaaaa'
+}
+]
+
+function teamlist(){
+        html = '';
+          for(var i=0; i<teams.length; i++){ 
+            html+= '<img src="imges/'teams[i].img+'"><br><p>'+teams[i].name+'</p><br><p>'+teams[i].position'</p>';
+          }
+        html+=``
+        document.getElementById(`teamUser`).innerHTML=html
+     } 
+teamList();
+console.log();
+function addToList(){
+        var addImg = document.getElementById('addImg').value;
+        var addName = document.getElementById('addName').value;
+        var addPosition = document.getElementById('addPosition').value;        
+        var who = {
+          'img': addImg,
+          'name':addImgName,
+          'position':addPosition
+        };
+        teams.push(who);   
+        teamList();
+        document.getElementById(`addImg`).value="";
+        document.getElementById(`addName`).value="";
+        document.getElementById(`addPosition`).value="";        
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

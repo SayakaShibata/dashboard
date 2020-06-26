@@ -32,18 +32,18 @@
 		</div>
 		<div id="contents">
 			<div id="project-activity" class="widget">
+
 				<div id="project-activity">
+					<a class="open-icon1"><img src="images/open.png"></a>
 					<h3>Project Activity</h3>
 					<div id="pDay" class="p-day-t p-day-f">
 						<ul>
-							
 							<li>Monday</li>
 							<li>Thursday</li>
 							<li>Wednesday</li>
 							<li>Thursday</li>
 							<li>Fryday</li>
 							<li>Saturday</li>
-							
 						</ul>
 					</div>
 					<canvas id="p-activity" width="auto" height="100%"></canvas>
@@ -52,30 +52,50 @@
 			<div class="col-left">
 				<div id="finance-activity" class="widget">
 					<h3>Finance Activity</h3>
-					<div class="chart-container" style="position: relative; height:182px; width:182px; float:left">
+					<div class="clearThis"></div>
+					<div id="f-right-navi">
+						<a class="open-icon2"><img src="images/open.png"></a>
+						<div class="cp_ipselect cp_sl03">
+							<select required>
+								<option value="" hidden>Month</option>
+								<option value="1">Jan</option>
+								<option value="2">Feb</option>
+								<option value="3">Mar</option>
+								<option value="4">Apr</option>
+							</select>
+							
+						</div>
+					</div>		
+					<div class="chart-container" style="position: relative; height:160px; width:160px; float:left">
 					    <canvas id="f-activity1"></canvas>
 					    <p>DETAIL</p>
 					</div>
-					<div class="chart-container" style="position: relative; height:182px; width:182px; float:left">
+					<div class="chart-container" style="position: relative; height:160px; width:160px; float:left">
 					    <canvas id="f-activity2"></canvas>
 					    <p>DETAIL</p>
 					</div>
-					<div class="chart-container" style="position: relative; height:182px; width:182px; float:left">
+					<div class="chart-container" style="position: relative; height:160px; width:160px; float:left">
 					    <canvas id="f-activity3"></canvas>
 					    <p>DETAIL</p>
 					</div>
 				</div>
+				<div class="clearThis"></div>
 				<div id="team" class="widget col-left">
 					<h3>Team</h3>
+					<a class="open-icon2"><img src="images/open.png"></a>
+					<div id="teamUser"></div>
 				</div>
 				<div id="schedule" class="widget col-right">
 					<h3>Schedule</h3>
+					<a class="open-icon1"><img src="images/open.png"></a>
+
 				</div>
 			</div>
 			<div class="col-right">
 				<div id="chats" class="widget">
 					<h3>Chats</h3>
-					<canvas id="myChart"></canvas>
+					<a class="open-icon1"><img src="images/open.png"></a>
+
 				</div>
 			</div>
 			<div class="clearThis"></div>
