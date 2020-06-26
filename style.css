@@ -18,11 +18,51 @@ h3{
 	font-size: 21px;
 }
 
+.closed-sidebar #sidebar{
+	width: 82px;
+	overflow-y: hidden;
+	font-size: 8px;
+	text-align: center;
+}
+
+.closed-sidebar #sidebar h2{
+	padding-left: 12px;
+}
+
+.closed-sidebar #sidebar a{
+	padding: 15px 10px;
+}
+
+.closed-sidebar #sidebar-menu ul li img{
+	padding-right: 0;
+	margin-bottom: 10px;
+	display: block;
+	margin: 0 auto;
+}
+
+.closed-sidebar #main{
+	padding-left: 85px;
+}
+.closed-sidebar #sidebar-menu ul li a .bagg{
+	position: absolute;
+	top:15px;
+	right: 15px;
+	background-color: #fa7d7d;
+	border-radius: 50%;
+	width: 12px;
+	font-style: 8px;
+	color: #fff;
+	text-align: center;
+}
+
+
 #sidebar {
 	width: 245px;
 	background-color: #f2f2f2;
 	min-height: 100vh;
 	position: fixed;
+	transition: all ease 300ms;
+
 }
 #sidebar-user {
 	text-align: center;
@@ -77,6 +117,7 @@ h3{
 	background-image: url(images/dashboard-bg.jpg);
 	background-size: cover;
 	min-height: 100vh;
+	transition: all ease 300ms;
 }
 #navigation {
 	padding: 35px 35px 35px 105px;
@@ -125,6 +166,7 @@ h3{
 	background-color: rgba(186,153,197,0.35);
 	width: 100%;
 	margin: 17px 0;
+	position: relative;;
 }
 #project-activity {
 	height: 370px;
@@ -146,6 +188,15 @@ h3{
 	width: 33%;
 	float: right;
 }
+.col-left2{
+	width: 33%;
+	float: left;
+}
+.col-right2{
+	width: 63%;
+	float: right;
+}
+
 .widget h3{
 	position: relative;
     padding: 22px 0 0 52px;
@@ -179,10 +230,9 @@ h3:before{
 
 .open-icon1 img{
 	position: absolute;
-	top: 140px;
-	right: 80px;
+	top: 20px;
+	right: 20px;
 }
-
 
 #f-right-navi{
 	position: relative;
@@ -244,8 +294,6 @@ h3:before{
 	color: #fff;
 }
 
-
-
 #pDay ul{
 }
 
@@ -258,7 +306,7 @@ h3:before{
 	}
 
 .chart-container {
-	margin: 30px 15px;
+	margin: 30px 10px;
 	text-align: center;
 	padding: 0 auto;
 }
@@ -266,7 +314,107 @@ h3:before{
 	text-align: center;
 	margin: 5px;
 	font-size: 10px;
+	text-align: top;
 }
+
+.team-member {
+	clear:both;
+	padding: 5px 37px;
+}
+
+.team-img {
+	width: 47px;
+	height: 47px;
+	border-radius: 50%;
+	float:left;
+}
+.team-name{
+	float: right;
+	}
+.team-position {
+	float: right;
+}
+
+.add {
+	display: block;
+	font-size: 14px;;
+	position: absolute;
+	bottom:10px;
+	left:50%;
+	transform:translateX(-50%);
+}
+
+.more-link {
+	color: #CDCDCD;
+	font-size: 13px;
+	margin-left: 57px;
+	margin-bottom: 40px;
+}
+
+#chatList {
+	clear:both;
+	padding: 10px 20px;
+}
+.chat-img {
+	width: 35px;
+	height: 35px;
+	border-radius: 50%;
+	margin-top: 10px;
+	float:left;
+}
+.chat-get {
+	position: relative;
+	background-color: #cccccc;
+	width: 60%;
+	padding: 5px 10px;
+	margin: 13px;
+	color: #666666;
+	float: left;
+}
+
+.chat-reply{
+	position: relative;
+	background-color: #cc6699;
+	width: 60%;
+	padding: 5px 10px;
+	margin: 13px 0;
+	float: right;
+}
+.chat-time{
+	font-size: 10px;
+	margin: 5px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

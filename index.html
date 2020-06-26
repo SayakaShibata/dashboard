@@ -25,7 +25,7 @@
 	</div>
 	<div id="main">
 		<div id="navigation">
-			<a class="menu-icon" href="#"><img src="images/menu.png"></a>
+			<a class="menu-icon" href="#" onclick="document.body.classList.toggle('closed-sidebar');"><img src="images/menu.png"></a>
 			<div id="gleet">Hi, <span>Sayaka</span> ! how is your thesis going?</div>
 			<a class="surch-icon" href="#"><img src="images/surch.png"></a>
 			<a class="bell-icon" href="#"><img src="images/bell.png"><div class="bagg2"></div></a>
@@ -34,7 +34,7 @@
 			<div id="project-activity" class="widget">
 
 				<div id="project-activity">
-					<a class="open-icon1"><img src="images/open.png"></a>
+					<a class="open-icon1" href="#"><img src="images/open.png"></a>
 					<h3>Project Activity</h3>
 					<div id="pDay" class="p-day-t p-day-f">
 						<ul>
@@ -46,7 +46,7 @@
 							<li>Saturday</li>
 						</ul>
 					</div>
-					<canvas id="p-activity" width="auto" height="100%"></canvas>
+					<canvas id="p-activity" width="1100" height="350"></canvas>
 				</div>
 			</div>
 			<div class="col-left">
@@ -54,7 +54,7 @@
 					<h3>Finance Activity</h3>
 					<div class="clearThis"></div>
 					<div id="f-right-navi">
-						<a class="open-icon2"><img src="images/open.png"></a>
+						<a class="open-icon2" href="#"><img src="images/open.png"></a>
 						<div class="cp_ipselect cp_sl03">
 							<select required>
 								<option value="" hidden>Month</option>
@@ -66,36 +66,58 @@
 							
 						</div>
 					</div>		
-					<div class="chart-container" style="position: relative; height:160px; width:160px; float:left">
+					<div class="chart-container" style="position: relative; height:150px; width:150px; float:left">
 					    <canvas id="f-activity1"></canvas>
 					    <p>DETAIL</p>
 					</div>
-					<div class="chart-container" style="position: relative; height:160px; width:160px; float:left">
+					<div class="chart-container" style="position: relative; height:150px; width:150px; float:left">
 					    <canvas id="f-activity2"></canvas>
 					    <p>DETAIL</p>
 					</div>
-					<div class="chart-container" style="position: relative; height:160px; width:160px; float:left">
+					<div class="chart-container" style="position: relative; height:150px; width:150px; float:left">
 					    <canvas id="f-activity3"></canvas>
 					    <p>DETAIL</p>
 					</div>
 				</div>
 				<div class="clearThis"></div>
-				<div id="team" class="widget col-left">
+				<div id="team" class="widget col-left2">
 					<h3>Team</h3>
-					<a class="open-icon2"><img src="images/open.png"></a>
+					<a class="open-icon1" href="#"><img src="images/open.png"></a>
 					<div id="teamUser"></div>
+					<div class="clearThis"></div>
+					<p class="add" onclick="">+AddTeammate</p>
+					
 				</div>
-				<div id="schedule" class="widget col-right">
+				<div id="schedule" class="widget col-right2">
 					<h3>Schedule</h3>
-					<a class="open-icon1"><img src="images/open.png"></a>
+					<a class="open-icon1" href="#"><img src="images/open.png"></a>
+					<a href="#" class="more-link">< TODAY</a>
+					<div id="s-contents" class="s-menu">
+						<ul>
+							<li>10:30 AM<br>Meeting Whith boss</li>
+							<li>02:00 PM<br>Teaching class <div class="map">Amikom</div></li>
+							<li>05:00 PM<br>Badminton</li>
+						</ul>
+					<p class="add" onclick="">+AddSchedule</p>
+
+					</div>
 
 				</div>
 			</div>
 			<div class="col-right">
 				<div id="chats" class="widget">
 					<h3>Chats</h3>
-					<a class="open-icon1"><img src="images/open.png"></a>
-
+					<a class="open-icon1" href="#"><img src="images/open.png"></a>
+					<a href="#" class="more-link">< MEMED NURROHMAD</a>
+					<div id="chatList">
+						<img src="images/user1.jpg" class="chat-img">
+						<div class="chat-get">what kind of food do you like ?<p class="chat-time">19:30</p></div>
+						<div class="chat-reply">I like Sushi how about you ?<p class="chat-time">19:30</p></div>
+						<div class="clearThis"></div>
+						<img src="images/user1.jpg" class="chat-img">
+						<div class="chat-get">what kind of food do you like ?<p class="chat-time">19:30</p></div>
+						<div class="chat-reply">what kind of food do you like ?<p class="chat-time">19:30</p></div>
+					</div>
 				</div>
 			</div>
 			<div class="clearThis"></div>

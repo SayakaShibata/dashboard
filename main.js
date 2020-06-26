@@ -1,3 +1,8 @@
+//open sideber
+
+
+
+
 
 // Define a plugin to provide data labels
 var dataLabelPlugin = {   afterDatasetsDraw: function (chart, easing) {
@@ -385,25 +390,25 @@ var fActivity3 = new Chart(ctx4, {
 var teams =[
 {
   'img': 'user1.jpg',
-  'name': 'aaaaa',
-  'position':'faaaaa'
+  'name': 'Name 1',
+  'position':'position1'
 },
 {
   'img': 'user2.jpg',
-  'name': 'aaaaa',
-  'position':'faaaaa'
+  'name': 'Name 2',
+  'position':'position2'
 },
 {
-  'img': 'open.png',
-  'name': 'aaaaa',
-  'position':'faaaaa'
+  'img': 'user3.jpg',
+  'name': 'Name 3',
+  'position':'position3'
 }
 ];
 
-function teamlist(){
+function teamList(){
         html = '';
           for(var i=0; i<teams.length; i++){ 
-            html+= '<img src="imges/'+teams[i].img+'"><br><p>'+teams[i].name+'</p><br><p>'+teams[i].position+'</p>';
+            html+= '<div class="team-member"><img src="images/'+teams[i].img+'" class="team-img"><p class="team-name">'+teams[i].name+'</p><p class="team-position">'+teams[i].position+'</p></div>';
           }
         html+=``;
         document.getElementById(`teamUser`).innerHTML=html
