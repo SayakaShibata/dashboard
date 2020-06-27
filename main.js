@@ -408,7 +408,7 @@ var teams =[
 function teamList(){
         html = '';
           for(var i=0; i<teams.length; i++){ 
-            html+= '<div class="team-member"><img src="images/'+teams[i].img+'" class="team-img"><p class="team-name">'+teams[i].name+'</p><p class="team-position">'+teams[i].position+'</p></div>';
+            html+= '<div class="team-member"><img src="images/'+teams[i].img+'" class="team-img"><p class="team-name">'+teams[i].name+'</p><br><p class="team-position">'+teams[i].position+'</p></div>';
           }
         html+=``;
         document.getElementById(`teamUser`).innerHTML=html

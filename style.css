@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
 
-
 body {
 	font-family: 'Raleway', sans-serif;
 	font-size: 16px;
@@ -169,16 +168,16 @@ h3{
 	position: relative;;
 }
 #project-activity {
-	height: 370px;
+	min-height: 370px;
 }
 #finance-activity{
-	height: 290px;
+	min-height: 290px;
 }
 #schedule, #team{
-	height: 270px;
+	min-height: 370px;
 }
 #chats{
-	height: 511px;
+	min-height: 515px;
 }
 .col-left{
 	width: 63%;
@@ -189,11 +188,13 @@ h3{
 	float: right;
 }
 .col-left2{
-	width: 33%;
+	width: 46%;
+	height: auto;
 	float: left;
 }
 .col-right2{
-	width: 63%;
+	width: 50%;
+	height: auto;
 	float: right;
 }
 
@@ -249,7 +250,7 @@ h3:before{
 	top: 0;
 	right: 60px;	
 	overflow: hidden;
-	width: 100px;
+	width: 110px;
 	text-align: center;
 	font-size: 12px;
 	background-color:none;
@@ -329,28 +330,105 @@ h3:before{
 	float:left;
 }
 .team-name{
-	float: right;
+	float: left;
+	margin-left: 15px;
 	}
 .team-position {
-	float: right;
+	float: left;
+	font-size: 13px;
+	color: #CDCDCD;
+	margin-left: 15px;
 }
 
-.add {
+p.add {
 	display: block;
-	font-size: 14px;;
+	font-size: 13px;
+	vertical-align:middle;
 	position: absolute;
-	bottom:10px;
+	bottom:0;
 	left:50%;
 	transform:translateX(-50%);
 }
+p.add:before{
+	content: "+";
+	font-size: 28px;
+	margin-right: 10px;
+}
+
 
 .more-link {
+	text-decoration: none;
 	color: #CDCDCD;
 	font-size: 13px;
 	margin-left: 57px;
 	margin-bottom: 40px;
 }
 
+.s-menu {
+	padding: 10px 30px;
+}
+.s-box{
+	position: relative;
+	border-left: 1px solid #663366;
+	padding-bottom: 20px;
+}
+
+.s-time {
+	margin-left: 20px;
+	font-size: 13px;
+}
+.s-box h4{
+	margin: 10px 0 10px 20px;
+}
+
+p.s-yellow:before{
+	font-size: 48px;
+    content: "\2022";
+    position: absolute;
+    top: -25px;
+    left: -9px;
+	color: #ffcc66;
+}
+
+p.s-pink:before{
+	font-size: 48px;
+    content: "\2022";
+    position: absolute;
+    top: -25px;
+    left: -9px;
+	color: #fe85ae;
+}
+
+p.s-green:before{
+	font-size: 48px;
+    content: "\2022";
+    position: absolute;
+    top: -25px;
+    left: -9px;
+	color: #68edad;
+}
+p.s-limit{
+	font-size: 10px;
+	position: absolute;
+	right: 0;
+	top:0;
+}
+
+p.s-map {
+	font-size: 13px;
+	margin-left: 20px;
+}
+
+p.s-map:before{
+	content:"";
+	display:inline-block;
+	width:14px;
+	height:14px;
+	background:url(images/map-icon.png) no-repeat;
+	background-size:contain;
+	margin-top: 10px;
+	margin-right: 10px;
+}
 #chatList {
 	clear:both;
 	padding: 10px 20px;
@@ -364,9 +442,9 @@ h3:before{
 }
 .chat-get {
 	position: relative;
-	background-color: #cccccc;
-	width: 60%;
-	padding: 5px 10px;
+	background-color: rgba(255,255,255,0.5);
+	width: 70%;
+	padding: 0px 5px 20px 5px;
 	margin: 13px;
 	color: #666666;
 	float: left;
@@ -374,49 +452,79 @@ h3:before{
 
 .chat-reply{
 	position: relative;
-	background-color: #cc6699;
-	width: 60%;
-	padding: 5px 10px;
+	background-color: rgba(204,102,153,0.8);
+	width: 70%;
+	padding: 0px 5px 20px 5px;
 	margin: 13px 0;
 	float: right;
 }
-.chat-time{
-	font-size: 10px;
-	margin: 5px;
+
+p.chat-message{
+	margin: 10px 10px;
+	font-size: 13px;
 }
 
+p.chat-time {
+	position: absolute;
+	font-size: 10px;
+	margin-left: 10px;
+	bottom:10px;
+	left: 10px;
+}
+p.c-seen {
+	position: absolute;
+	font-size: 8px;
+	float: left;
+	bottom:8px;
+	left: 60px;
+}
 
+.chat-add {
+	background-color: rgba(255,255,255,0.8);
+	color: #666666;
+	width: 100%;
+	height: 45px;
+	position: absolute;
+	bottom:0;
+	left:0;
+}
 
+#addChat{
+	position: absolute;
+	top: 25%;
+	left: 15px;
+}
 
+#chatEntry{
+	font-size: 13px;
+	position: absolute;
+	top: 15px;
+	left: 50px;
+}
+#chatSmile{
+	position: absolute;
+	top: 25%;
+	right: 50px;
+}
+#chatSend{
+	position: absolute;
+	top: 25%;
+	right: 15px;
+}
 
+#addWidget{
+	float: right;
+	width: 15%;
+	background-color: rgba(186,153,197,0.35);
+	font-size: 13px;
+	padding: 0 20px;
+	vertical-align:middle;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+#addWidget:before{
+	content: "+";
+	font-size: 28px;
+	margin-right: 10px;
+}
 
 

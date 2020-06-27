@@ -58,10 +58,18 @@
 						<div class="cp_ipselect cp_sl03">
 							<select required>
 								<option value="" hidden>Month</option>
-								<option value="1">Jan</option>
-								<option value="2">Feb</option>
-								<option value="3">Mar</option>
-								<option value="4">Apr</option>
+								<option value="1">January</option>
+								<option value="2">February</option>
+								<option value="3">March</option>
+								<option value="4">April</option>
+								<option value="5">May</option>
+								<option value="6">June</option>
+								<option value="7">July</option>
+								<option value="8">August</option>
+								<option value="9">September</option>
+								<option value="10">October</option>
+								<option value="11">November</option>
+								<option value="12">December</option>
 							</select>
 							
 						</div>
@@ -85,23 +93,25 @@
 					<a class="open-icon1" href="#"><img src="images/open.png"></a>
 					<div id="teamUser"></div>
 					<div class="clearThis"></div>
-					<p class="add" onclick="">+AddTeammate</p>
+					<p class="add" onclick="">Add Teammate</p>
 					
 				</div>
 				<div id="schedule" class="widget col-right2">
 					<h3>Schedule</h3>
 					<a class="open-icon1" href="#"><img src="images/open.png"></a>
 					<a href="#" class="more-link">< TODAY</a>
-					<div id="s-contents" class="s-menu">
-						<ul>
-							<li>10:30 AM<br>Meeting Whith boss</li>
-							<li>02:00 PM<br>Teaching class <div class="map">Amikom</div></li>
-							<li>05:00 PM<br>Badminton</li>
-						</ul>
-					<p class="add" onclick="">+AddSchedule</p>
-
+					<div id="s-contents" class="s-menu">						
+						<div class="s-box">
+							<p class="s-time s-yellow">10:30 AM</p><p class="s-limit">20min</p><h4>Meeting Whith boss</h4>
+						</div>
+						<div class="s-box">
+							<p class="s-time s-pink">02:00 PM</p><p class="s-limit">1hour</p><h4>Teaching class</h4> <p class="s-map">Amikom</p>
+						</div>
+						<div class="s-box">
+							<p class="s-time s-green">05:00 PM</p><p class="s-limit">7hour</p><h4>Badminton</h4>
+						</div>					
+						<p class="add" onclick="">Add Schedule</p>
 					</div>
-
 				</div>
 			</div>
 			<div class="col-right">
@@ -111,18 +121,32 @@
 					<a href="#" class="more-link">< MEMED NURROHMAD</a>
 					<div id="chatList">
 						<img src="images/user1.jpg" class="chat-img">
-						<div class="chat-get">what kind of food do you like ?<p class="chat-time">19:30</p></div>
-						<div class="chat-reply">I like Sushi how about you ?<p class="chat-time">19:30</p></div>
+						<div class="chat-get">
+							<p class="chat-message">Do you have time to have a meeting today?</p><p class="chat-time">19:30</p>
+						</div>
+						<div class="chat-reply">
+							<p class="chat-message">Well, I don't have enough time. How about tomorrow?</p><p class="chat-time">19:30</p><p class="c-seen">seen</p>
+						</div>
 						<div class="clearThis"></div>
 						<img src="images/user1.jpg" class="chat-img">
-						<div class="chat-get">what kind of food do you like ?<p class="chat-time">19:30</p></div>
-						<div class="chat-reply">what kind of food do you like ?<p class="chat-time">19:30</p></div>
+						<div class="chat-get">
+							<p class="chat-message">So can you start 1hour tomorrow at 10am?</p><p class="chat-time">19:30</p>
+						</div>
+						<div class="chat-reply">
+							<p class="chat-message">ok. thank you.</p><p class="chat-time">19:30</p><p class="c-seen">seen</p>
+						</div>
+					</div>
+					<div class="clearThis"></div>
+					<div class="chat-add">
+						<div id="addChat"><img src="images/add-icon.png"></div>
+						<div id="chatEntry">Tipe a new message</div>
+						<div id="chatSmile"><img src="images/smil-icon.png"></div>
+						<div id="chatSend"><img src="images/send-icon.png"></div>
 					</div>
 				</div>
 			</div>
+			<div id="addWidget" class="add-widget">Add Widget</div>
 			<div class="clearThis"></div>
-
-			
 		</div>
 	</div>
     <!-- Optional JavaScript -->
